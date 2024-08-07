@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar {
+    position: sticky;
+}
+
+.navbar .github {
+    width: 250x;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navbar .github:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+.video video {
+    width: 600px;
+    height: 600px;
+}
+.home {
+    overflow: hidden;
+}
+.personal-info p{
+    font-size: 20px;
+}
+.personal-info h2 {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+@media (max-width:667px) {
+    .home {
+        margin-top: 70px;
+    }
+    .home .row  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .row .video video{
+        width: 400px;
+        height: 400px;
+    }
+    .github {
+        display: none;
+    } 
+    .about h2 {
+        text-align:center;
+    }
+    .about p {
+        text-align: center;
+    }
+    .skills .row .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .projects .row .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width:992px) {
+    .github {
+        display: none;
+    }
+}
+@media (min-width:992px) {
+    .video video {
+        margin-left: 100px;
+    }
+}
+
+
+.social a {
+    padding: 10px;
+    color: #212529;
+    font-size: 20px;
+}
+
+/* .navbar a:hover, .navbar-nav a:hover {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px white;
+} */
+
+.about {
+    background-color: #212529;
+}
+
+.about  h2 {
+    padding-top: 50px;
+}
+.about  p{
+    padding: 10px 30px;
+    padding-bottom: 30px;
+}
+.about  p::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+}
+.skills {
+    background-color: #212529;
+    margin-top: -20px;
+}
+.skills .row  {
+    margin-top: 20px;
+}
+.skills h2 {
+    padding: 30px;
+
+}
+
+
+.skills .card-body {
+    background-color: black;
+    outline: none;
+    border: none;
+}
+
+@media (max-width:992px) {
+    .skills .row .card {
+        margin-top: 20px;
+    }
+    .skills .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.projects img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.projects img:hover {
+    transform: scale(1.05);
+
+}
